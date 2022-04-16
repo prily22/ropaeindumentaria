@@ -112,8 +112,16 @@ img {
     grid-gap: 20px;
     grid-template-columns: repeat(2,1fr);
     justify-content: end;
+}
+
+.Item { 
+    border-radius: 2px;
+}
+.Item:hover {
+    transform:scale(3);
     
 }
+
 .grid-container > *{
     border: 1px solid black;
     text-align: center;
@@ -171,6 +179,7 @@ form{
 }
 .redessociales a:hover {
     background-color:darkslateblue;
+    transform:scale(2);
     
 }
 .redessociales a:hover {
@@ -178,7 +187,7 @@ form{
 }
 .redessociales{
     display: flex;
-    padding: 20px 50px;
+    padding: 30px 50px;
     justify-content: right;
     cursor: pointer;
     transition: all 0.7s ease;
@@ -218,7 +227,9 @@ footer {
 .galeria .fotos img:hover{
     opacity:.6;
     cursor: pointer;
+    transform: translate(0px , 15px);
 }
+
 
 /*Preguntas frecuentes*/
 
@@ -303,6 +314,11 @@ header .contenido-header .action-header{
 header .contenido-header .action-header:hover{
     background: black;
     color: #fff;
+}
+.tarjeta:hover {
+    transform:scale(1.3);
+    width: auto;
+
 }
 
 footer .contacto{
