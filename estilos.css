@@ -117,10 +117,11 @@ img {
 .Item { 
     border-radius: 2px;
 }
+/*
 .Item:hover {
     transform:scale(3);
     
-}
+}*/
 
 .grid-container > *{
     border: 1px solid black;
