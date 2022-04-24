@@ -8,20 +8,22 @@
 }
 
 body{
-    background: url(./img/bannernaranja.jpg);
+    background: url(./img/fondo_blanco_ladrillo_cemento.jpg);
     width: auto;
     height: 100px;
 }
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
-    align-items: center;
+    color: #fa15fa;
+    text-align: center;
+
 }
 p { 
     margin-bottom: 1.6em;
 }
-img {
-    position:unset;
+
+.img {
+    position:center;
     width: 50%;
     height: 100%;
     display: flex;
@@ -41,16 +43,19 @@ img {
 
 .grid-header { 
     display: grid;
-    background-image: url(img/petalos.jpg!d);
+    background-image: url(img/fondonegrorosa.webp);
     background-repeat: repeat;
     width: 100%;
     height: 300%;
-    color: black;
+    color:#fa15fa;
     padding: 2rem 0;
     justify-content: center;
     align-items: center;
-    justify-content: center;
-
+    background-position: center;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-attachment: fixed;
+    right: 0;
 }
 
 .navigation ul{
@@ -83,7 +88,7 @@ img {
     
 }
 .nav{
- height: 50px;
+ height: 100px;
  border: 1px solid white;
  grid-area: nav;
 }
@@ -115,16 +120,16 @@ img {
 }
 
 .Item { 
-    border-radius: 2px;
+    border-radius: 1px;
 }
-/*
+
 .Item:hover {
-    transform:scale(3);
+    transform:scale(1);
     
-}*/
+}
 
 .grid-container > *{
-    border: 1px solid black;
+    border: 1px solid #fa15fa;
     text-align: center;
     background-color:#b13395;
 }
@@ -179,8 +184,8 @@ form{
     
 }
 .redessociales a:hover {
-    background-color:darkslateblue;
-    transform:scale(2);
+    background-color:grey;
+    transform:scale(1);
     
 }
 .redessociales a:hover {
@@ -241,11 +246,16 @@ footer {
     margin: auto;
 }
 
+.titulo-header {
+    font-family:monospace;
+    background-color: black;
+    
+}
 header{
-    background-image: url("./img/petalos.jpg!d");
+    background-image: url("./img/fondonegrorosa.webp");
     background-position: center;
     background-size: cover;
-    background-color: black;
+    background-color: #fa15fa;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-attachment: fixed;
     right: 0;
@@ -271,15 +281,15 @@ header .menu a{
     text-decoration: none;
 }
 header .contenido-header{
-    margin:120px 0;
-    display: flex;
+    margin: 20px 0;
+    display: grid;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
 }
 header .contenido-header .titulo-header{
-    font-size: 120px;
+    font-size: 30px;
     text-align: center;
     color: white;
     text-align: center;
@@ -295,7 +305,7 @@ header .contenido-header .linea-header{
 }
 
 header .contenido-header .texto-header{
-    color:black;
+    color:#fa15fa;
     font-weight: 300;
     margin-bottom:30px;
     font-size:20px;
@@ -305,9 +315,9 @@ header .contenido-header .texto-header{
 header .contenido-header .action-header{
     display: inline-block;
     margin: auto;
-    color: black;   
+    color: #fa15fa;   
     text-decoration: none;
-    border:1px solid black;
+    border:1px solid #fa15fa;
     padding: 10px 20px;
     border-radius: 5px;
 }
@@ -331,14 +341,14 @@ footer .contacto{
 
 footer .footer-textos{
     text-align: center;
-    color: #fff;
+    color: black;
     font-size:25px;
 }
 
 footer .footer-textos p{
     font-size: 14px;
     margin:15px 0 30px 0;
-    color: #999999;
+    color: black;
 
 }
 form{
@@ -346,6 +356,7 @@ form{
     flex-direction: column;
     margin: auto;
     width: 70%;
+    color: black;
     
 }
 footer .contacto  input[type="text"], footer .contacto  input[type="email"],
@@ -355,8 +366,8 @@ footer .contacto  textarea{
     padding: 15px 20px;
     background: none;
     border-radius: 5px;
-    color:rgb(204, 204, 204);
-    border: 2px solid rgba(204, 204, 204, 0.383);
+    color:black;
+    border: 2px solid black;
     font-family: 'lato';
     font-weight: 300;
 }
@@ -380,7 +391,7 @@ footer .contacto  input[type="submit"]{
     background: none;
     border:1px solid #ca3eb3;
     border-radius: 5px;
-    color:#fff;
+    color: black;
     cursor: pointer;
     float:right;
 
@@ -409,6 +420,9 @@ footer .contacto  input[type="submit"]:hover{
     background-color:#e690d4;
 }
 
+.text-center {
+    background-position: center;
+}
 
 /*aplico media querin*/
 
@@ -576,16 +590,20 @@ footer .contacto  input[type="submit"]:hover{
 .grid-servicios {
     display:grid;
     grid-gap: 20px;
-    justify-content: center;
+    justify-content:center;
     
 }
-.grid-container > *{
+.grid-container *{
     border: 1px solid black;
     text-align: center;
     background-color:#b13395;
           
 }
 .imagen-grid {
-    height: 200px;
-    width: 1000px;
+    height: 50px;
+    width: 100px;
+    background-position: end;
+}
+.grid-formulario {
+    display:inline-table;
 }
