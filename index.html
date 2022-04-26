@@ -38,13 +38,31 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores velit maxime sapiente? Ea cum, tempore incidunt explicabo impedit, quasi asperiores quas atque nobis possimus, quia quisquam nam minima suscipit dolore.</p>
     </article>
     <section>
+        <!--carrusel-->
         <article class="imagen">
-        
+            
             <!--Aplico bootstrap-->
-            <div>
-                <div class="text-center">
-                    <img src="./img/mujermodelo.webp" class="rounded" alt="...">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/modelo3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/mujermodelo.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/mujermodelo2.jpg" class="d-block w-100" alt="...">
+                  </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
 
         </article>
@@ -119,8 +137,11 @@
     </form>
     <hr>
 </div>
-    <textarea name="" id="" cols="40" rows="10"></textarea>
-    <div>
+<div class="form-floating">
+    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+    <label for="floatingTextarea2">Comentario</label>
+  </div>
+        <div>
         <button>Solicitar pedido</button>
     </div>
 

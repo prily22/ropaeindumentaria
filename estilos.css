@@ -30,6 +30,11 @@ p {
     align-items: center;
     justify-content: center;
 }
+.imagen {
+    width: 40%;
+    height: 30%;
+    justify-content: center;
+}
 
 header{
     display: grid;
@@ -79,7 +84,9 @@ a {
     text-align: center;
     background-color:#b13395;
 }
-
+.grid-texto {
+    display: flex;
+}
 .form{
     color: black;
     display: flex;
