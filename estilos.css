@@ -1,19 +1,16 @@
 *{
     padding: 0;
     margin: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.4em;
-    position: relative;
+    
 }
 
 body{
     background: url(./img/fondo_blanco_ladrillo_cemento.jpg);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     min-width: 100vh;
-    margin: 0;
+    
 }
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -87,7 +84,7 @@ a {
     color: black;
     display: flex;
     flex-direction:column;
-    margin: auto;
+    margin: top;
     width: 50%;
  }
 
@@ -324,11 +321,4 @@ footer {
 .fotos {
     grid-area: fotos;  
 }
-
-    
-    
-    
-    
-
-
-/*Preguntas frecuentes*/
+}
