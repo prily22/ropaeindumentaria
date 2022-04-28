@@ -1,0 +1,139 @@
+@import "_reponsive";
+
+nav {
+    grid-area: nav;
+}
+.main-header {
+    grid-area: header;
+}
+.logo-nav-container  {
+    grid-area: log-nav-con;
+}
+.main-nav {
+    grid-area: mainnav; }
+.content {
+    grid-area: contenido;
+}
+
+.grid-container {
+    grid-area: grid-container;
+}
+.textarea {
+    grid-area: textarea;}
+
+.contenedor {
+    grid-area: contenedor;
+}
+.footer {
+    grid-area: footer;}
+.fotos {
+    grid-area: fotos;
+}
+.galeria {
+    grid-area:galeria;
+}
+.wrapper {
+    display: grid;
+    gap:20px;
+    grid-template-areas:
+    "nav"
+    "main-header"
+    "logo-nav-container"
+    "main-nav"
+    "content"
+    "grid-container"
+    "textarea"
+    "contenedor"
+    "footer";
+    border: 2px solid black;
+}
+.galeria {
+    grid-area: galeria;
+}
+.fotos {
+    grid-area: fotos;
+}
+@media screen and (max-width:430px){
+    .wrapper {
+        display: grid;
+        grid-template-areas:
+        "galeria"
+        "fotos fotos";
+    }
+    .galeria{
+        background-position:49%;
+    }
+    .fotos {
+        background-position:49%;
+    }
+}
+@media (min-width:300px){
+    .wrapper {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: 
+        "main-header"
+        "nav"
+        "logo-nav-container"
+        "main-nav"
+        "content"
+        "grid-container"
+        "textarea contenedor"
+        "footer footer" ;
+    }
+
+    .nav ul {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid black;
+      border:2cm;
+    }
+    .grid-container {
+        justify-content: space-around;
+        border: 1px solid black;
+        border:2cm;
+    }
+    .footer {
+        display: block; }  
+   
+@media (max-width:768px){
+    .wrapper {
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "nav container"
+        "nav container"
+        "grid-container grid- container"
+        "textarea textarea"
+        "contenedor contenedor"
+        "footer footer footer";
+    }
+      .nav ul {
+          flex-direction: row;
+          border: 2px dotted dodgerblue;
+      } 
+      
+    .nav ul {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid black;
+      border:2cm;}
+    
+@media (max-width:1000px) {  
+    .wrapper {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        "container container container"
+        "grid-container grid- container"
+        "textarea textarea"
+        "contenedor contenedor"
+        "footer footer footer footer"; 
+        header {
+            color: white;}
+        footer {
+            display:contents;}
+    } 
+}
+    } 
+    }

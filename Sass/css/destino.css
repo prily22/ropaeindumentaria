@@ -1,0 +1,357 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(./img/fondo_blanco_ladrillo_cemento.jpg);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-width: 100vh;
+
+}
+
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fa15fa;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 1.6em;
+}
+
+.img {
+  position: center;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen {
+  width: 40%;
+  height: 40%;
+  justify-content: center;
+}
+
+header {
+  display: grid;
+  justify-content: last baseline;
+  background-image: url(img/fondonegrorosa.webp);
+  background-repeat: repeat;
+  width: 100%;
+  height: 300%;
+  padding: 0%;
+}
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav ul li {
+  display: inline-block;
+}
+
+.main-nav ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.main-header ul li a:hover {
+  background: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: end;
+}
+
+.Item {
+  border-radius: 1px;
+}
+
+.Item:hover {
+  transform: scale(1);
+}
+
+.grid-container > * {
+  border: 1px solid #fa15fa;
+  text-align: center;
+  background-color: #b13395;
+}
+
+.grid-texto {
+  display: flex;
+}
+
+.form {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  margin: top;
+  width: 50%;
+}
+
+textarea {
+  background-position: left;
+  margin: auto;
+  display: flex;
+  width: 50%;
+}
+
+button {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.Contenedor {
+  display: flex;
+  width: 50%;
+  height: 10vh;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.redessociales a:hover {
+  background-color: grey;
+  transform: scale(1);
+}
+
+.redessociales a:hover {
+  color: white;
+}
+
+.redessociales {
+  display: flex;
+  padding: 30px 50px;
+  justify-content: right;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+
+.redessociales a {
+  color: black;
+}
+
+footer {
+  text-align: center;
+  padding: 1 em;
+  color: rgb(10, 9, 9);
+  bottom: 0;
+  margin-top: auto;
+}
+
+nav {
+  grid-area: nav;
+}
+
+.main-header {
+  grid-area: header;
+}
+
+.logo-nav-container {
+  grid-area: log-nav-con;
+}
+
+.main-nav {
+  grid-area: mainnav;
+}
+
+.content {
+  grid-area: contenido;
+}
+
+.grid-container {
+  grid-area: grid-container;
+}
+
+.textarea {
+  grid-area: textarea;
+}
+
+.contenedor {
+  grid-area: contenedor;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.fotos {
+  grid-area: fotos;
+}
+
+.galeria {
+  grid-area: galeria;
+}
+
+.wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "nav" "main-header" "logo-nav-container" "main-nav" "content" "grid-container" "textarea" "contenedor" "footer";
+  border: 2px solid black;
+}
+
+.galeria {
+  grid-area: galeria;
+}
+
+.fotos {
+  grid-area: fotos;
+}
+
+@media screen and (max-width: 430px) {
+  .wrapper {
+    display: grid;
+    grid-template-areas: "galeria" "fotos fotos";
+  }
+
+  .galeria {
+    background-position: 49%;
+  }
+
+  .fotos {
+    background-position: 49%;
+  }
+}
+@media (min-width: 300px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "main-header" "nav" "logo-nav-container" "main-nav" "content" "grid-container" "textarea contenedor" "footer footer";
+  }
+
+  .nav ul {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border: 2cm;
+  }
+
+  .grid-container {
+    justify-content: space-around;
+    border: 1px solid black;
+    border: 2cm;
+  }
+
+  .footer {
+    display: block;
+  }
+
+  /*Pedidos*/
+
+  /*Pedidos*/
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "header header header" "nav container" "nav container" "grid-container grid- container" "textarea textarea" "contenedor contenedor" "footer footer footer";
+  }
+
+  .nav ul {
+    flex-direction: row;
+    border: 2px dotted dodgerblue;
+  }
+
+  .nav ul {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border: 2cm;
+  }
+}
+@media (min-width: 300px) and (max-width: 768px) and (max-width: 1000px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "header header header header" "nav nav nav nav" "container container container" "grid-container grid- container" "textarea textarea" "contenedor contenedor" "footer footer footer footer";
+  }
+}
+@media (min-width: 300px) {
+  body {
+    background-color: #fa15fa;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+}
+@media (min-width: 300px) {
+  header {
+    color: white;
+  }
+}
+@media (min-width: 300px) {
+  footer {
+    display: contents;
+  }
+}
+@media (min-width: 300px) {
+  .galeria {
+    display: flex;
+    background-position: right;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 300px) {
+  .galeria .fotos {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 300px) {
+  .grid-container * {
+    border: 1px solid black;
+    text-align: center;
+    background-color: #b13395;
+  }
+}
+@media (min-width: 300px) {
+  .fotos img {
+    width: 70%;
+    height: 210px;
+    border-radius: 5px;
+  }
+}
+@media (min-width: 300px) {
+  .galeria .fotos img:hover {
+    opacity: 6;
+    cursor: pointer;
+    transform: translate(0px, 15px);
+  }
+}
+@media (min-width: 300px) {
+  .computer {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+  }
+}
+@media (min-width: 300px) {
+  .galeria {
+    grid-area: galeria;
+  }
+}
+@media (min-width: 300px) {
+  .fotos {
+    grid-area: fotos;
+  }
+}
+
+/*# sourceMappingURL=destino.css.map */
