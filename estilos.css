@@ -197,7 +197,7 @@ nav {
 .fotos {
     grid-area: fotos;
 }
-@media screen and (max-width:430px){
+@media screen and (max-width:500px){
     .wrapper {
         display: grid;
         grid-template-areas:
@@ -211,7 +211,7 @@ nav {
         background-position:49%;
     }
 }
-@media (min-width:300px){
+@media (min-width:500px){
     .wrapper {
         grid-template-columns: 1fr 3fr;
         grid-template-areas: 
@@ -239,7 +239,7 @@ nav {
     .footer {
         display: block; }  
    
-@media (max-width:768px){
+@media (max-width:501px){
     .wrapper {
         grid-template-columns: 1fr 4fr 1fr;
         grid-template-areas: 
@@ -262,7 +262,7 @@ nav {
       border: 1px solid black;
       border:2cm;}
     
-@media (max-width:1000px) {  
+@media (max-width:960px) {  
     .wrapper {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas:
